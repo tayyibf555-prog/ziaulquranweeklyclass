@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Young Explorers Programme | Zia-ul-Quran</title>
+  <meta name="description"
+    content="A structured Saturday enrichment programme for children aged 5–11 at Zia-ul-Quran Mosque. Join Young Explorers for Islamic education, creative learning, and coordinated sport every Saturday 10am–1pm." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>" />
+
+  <link rel="stylesheet" href="styles.css?v=chalkboard" />
+</head>
+
+<body class="dark-theme">
+
+  <!-- Playground Drawing Animation -->
+  <div class="doodle-scene">
+    <svg class="drawing-layer" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+
+      <!-- Pencil Effect Filter -->
+      <defs>
+        <filter id="pencil" x="-5%" y="-5%" width="110%" height="110%">
+          <feTurbulence type="turbulence" baseFrequency="0.035" numOctaves="4" seed="2" result="noise" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </defs>
+
+      <!-- ===== SKY ===== -->
+      <!-- Sun with rays -->
+      <circle class="draw-path" cx="950" cy="120" r="45" />
+      <path class="draw-path"
+        d="M950,55 L950,30 M950,185 L950,210 M885,120 L860,120 M1015,120 L1040,120 M902,72 L884,54 M998,72 L1016,54 M902,168 L884,186 M998,168 L1016,186" />
+
+      <!-- Cloud 1 - puffy -->
+      <path class="draw-path"
+        d="M180,100 Q195,65 225,80 Q255,55 285,80 Q315,65 330,100 Q345,115 330,130 Q310,150 280,145 Q250,155 220,145 Q190,150 175,130 Q165,115 180,100" />
+      <!-- Cloud 2 -->
+      <path class="draw-path"
+        d="M550,70 Q565,42 590,55 Q612,35 635,55 Q658,42 670,70 Q682,82 670,95 Q650,110 625,105 Q600,115 575,105 Q555,110 545,95 Q535,82 550,70" />
+
+      <!-- ===== PLAYGROUND ===== -->
+      <!-- Ground line - wobbly grass -->
+      <path class="draw-path"
+        d="M0,620 Q50,615 100,620 Q150,625 200,618 Q250,622 300,620 Q400,615 500,622 Q600,618 700,620 Q800,625 900,618 Q1000,622 1100,620 L1200,620" />
+      <!-- Grass tufts -->
+      <path class="draw-path"
+        d="M80,620 L75,600 M85,620 L90,605 M150,620 L148,602 M155,620 L160,608 M350,620 L345,598 M355,620 L360,605 M500,618 L495,600 M505,618 L512,604 M750,620 L748,600 M758,620 L762,606 M900,618 L895,598 M905,618 L910,604 M1050,620 L1045,600 M1055,620 L1060,606" />
+
+      <!-- Swing set - A-frame -->
+      <path class="draw-path" d="M120,620 L180,350 L240,620" />
+      <path class="draw-path" d="M155,350 L205,350" />
+      <!-- Swing 1 - chains + seat -->
+      <path class="draw-path" d="M170,352 L162,510 M190,352 L198,510" />
+      <path class="draw-path" d="M158,510 L202,510" />
+      <!-- Kid on swing (stick figure) -->
+      <circle class="draw-path" cx="180" cy="480" r="10" />
+      <path class="draw-path"
+        d="M180,490 L180,520 M180,500 L168,512 M180,500 L192,512 M180,520 L170,545 M180,520 L190,545" />
+
+      <!-- Slide -->
+      <path class="draw-path" d="M420,620 L420,380 L480,380 L480,400 L440,400 L440,380" />
+      <path class="draw-path" d="M480,400 Q520,500 560,620" />
+      <!-- Ladder rungs -->
+      <path class="draw-path"
+        d="M430,420 L445,420 M430,460 L445,460 M430,500 L445,500 M430,540 L445,540 M430,580 L445,580" />
+      <!-- Kid sliding down -->
+      <circle class="draw-path" cx="510" cy="495" r="10" />
+      <path class="draw-path"
+        d="M510,505 L520,530 M510,515 L498,525 M510,515 L522,525 M520,530 L512,555 M520,530 L530,552" />
+
+      <!-- Seesaw -->
+      <path class="draw-path" d="M750,600 L770,600 L760,580 Z" />
+      <path class="draw-path" d="M690,568 L830,592" />
+      <!-- Kid left (up) -->
+      <circle class="draw-path" cx="700" cy="540" r="10" />
+      <path class="draw-path" d="M700,550 L700,568 M700,555 L688,565 M700,555 L712,565" />
+      <!-- Kid right (down) -->
+      <circle class="draw-path" cx="820" cy="565" r="10" />
+      <path class="draw-path" d="M820,575 L820,592 M820,580 L808,590 M820,580 L832,590" />
+
+      <!-- Big Tree -->
+      <path class="draw-path" d="M1050,620 L1050,420 Q1048,415 1045,420 L1042,620" />
+      <!-- Tree canopy - big fluffy cloud shape -->
+      <path class="draw-path"
+        d="M1000,430 Q1010,380 1035,395 Q1045,355 1070,380 Q1090,360 1100,395 Q1120,385 1110,430 Q1095,450 1070,445 Q1050,460 1030,445 Q1010,450 1000,430" />
+      <!-- Extra branches -->
+      <path class="draw-path" d="M1048,470 Q1020,460 1010,450 M1048,480 Q1080,465 1095,445" />
+
+      <!-- Bouncing Ball -->
+      <circle class="draw-path" cx="620" cy="580" r="18" />
+      <path class="draw-path" d="M605,578 Q620,562 635,578 M610,588 Q620,598 630,588" />
+
+      <!-- Running kid (stick figure) -->
+      <circle class="draw-path" cx="350" cy="575" r="10" />
+      <path class="draw-path"
+        d="M350,585 L350,610 M350,592 L338,600 M350,592 L365,598 M350,610 L340,630 M350,610 L365,625" />
+
+      <!-- Bird in sky -->
+      <path class="draw-path" d="M400,150 Q410,140 420,150 Q430,140 440,150" />
+      <path class="draw-path" d="M720,180 Q730,170 740,180 Q750,170 760,180" />
+      <path class="draw-path" d="M300,200 Q310,190 320,200 Q330,190 340,200" />
+
+      <!-- Butterfly -->
+      <path class="draw-path"
+        d="M850,280 Q840,260 855,250 Q870,260 860,280 M850,280 Q840,300 855,310 Q870,300 860,280" />
+
+      <!-- Flower 1 -->
+      <path class="draw-path" d="M280,620 L280,580" />
+      <circle class="draw-path" cx="280" cy="575" r="5" />
+      <path class="draw-path" d="M275,570 Q280,562 285,570 M273,575 Q278,568 275,580 M287,575 Q282,568 285,580" />
+
+      <!-- Flower 2 -->
+      <path class="draw-path" d="M650,620 L650,585" />
+      <circle class="draw-path" cx="650" cy="580" r="5" />
+      <path class="draw-path" d="M645,575 Q650,567 655,575 M643,580 Q648,573 645,585 M657,580 Q652,573 655,585" />
+      <!-- ===== PAPER AIRPLANE FINALE ===== -->
+      <!-- Looping trail the plane leaves behind -->
+      <path class="plane-trail"
+        d="M-30,450 C50,380 120,300 200,350 C280,400 300,280 380,250 C460,220 480,320 540,280 C600,240 620,180 700,220 C780,260 780,350 840,300 C900,250 920,180 1000,200 C1080,220 1100,300 1150,250 L1250,180" />
+
+      <!-- Paper airplane (stroke outline, draws itself in like the rest) -->
+      <g class="paper-plane">
+        <path class="draw-path plane-shape" d="M0,-10 L22,0 L0,10 L5,0 Z" />
+        <animateMotion
+          path="M-30,450 C50,380 120,300 200,350 C280,400 300,280 380,250 C460,220 480,320 540,280 C600,240 620,180 700,220 C780,260 780,350 840,300 C900,250 920,180 1000,200 C1080,220 1100,300 1150,250 L1250,180"
+          dur="12s" begin="12s" fill="freeze" rotate="auto" />
+      </g>
+
+    </svg>
+  </div>
+
+  <!-- Note: Background decorative elements (Parallax) -->
+  <div class="parallax-layer" data-speed="0.2">
+    <div class="bg-orb orb-1"></div>
+  </div>
+  <div class="parallax-layer" data-speed="-0.1">
+    <div class="bg-orb orb-2"></div>
+  </div>
+  <div class="parallax-layer" data-speed="0.15">
+    <div class="bg-orb orb-3"></div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container container-wide header-inner">
+      <a href="#" class="brand">
+        <img src="loading-logo.jpg" alt="Zia-ul-Quran Logo" class="brand-logo">
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#about">About</a>
+        <a href="#features">Programme</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register" class="btn btn-gold-outline btn-sm">Join Waiting List</a>
+      </nav>
+
+      <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileNav">
+    <button class="close-menu" id="mobileNavClose">&times;</button>
+    <nav class="mobile-nav-links">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#features" class="mobile-link">Programme</a>
+      <a href="#schedule" class="mobile-link">Schedule</a>
+      <a href="#register" class="mobile-link highlight">Register Now</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+
+          <h1 class="hero-title">
+            Faith, Learning & <br>
+            <span class="text-gradient-gold">Joy Grow Together</span>
+          </h1>
+
+          <p class="hero-lead">
+            A weekly programme for children aged 5–11, blending structured Islamic education with creative play and
+            coordinated sport.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#register" class="btn btn-gold">Register Your Child</a>
+            <a href="#about" class="btn btn-text">
+              <span class="play-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </span> Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- BENTO GRID: Features Teaser -->
+        <div class="hero-grid reveal reveal-delay-1">
+          <div class="bento-card card-islamic">
+            <div class="card-icon">
+              <!-- Book Icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3>Islamic Learning</h3>
+            <p>Safar Academy curriculum</p>
+          </div>
+          <div class="bento-card card-creative">
+            <div class="card-icon">
+              <!-- Palette Icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="13.5" cy="6.5" r=".5"></circle>
+                <circle cx="17.5" cy="10.5" r=".5"></circle>
+                <circle cx="8.5" cy="7.5" r=".5"></circle>
+                <circle cx="6.5" cy="12.5" r=".5"></circle>
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z">
+                </path>
+              </svg>
+            </div>
+            <h3>Creative Play</h3>
+            <p>Arts, crafts & games</p>
+          </div>
+          <div class="bento-card card-sport">
+            <div class="card-icon">
+              <!-- Activity Icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h3>Sport & Move</h3>
+            <p>Table tennis & team games</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHY YOUNG EXPLORERS ========== -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="bento-layout-main">
+
+          <!-- Large Text Block -->
+          <div class="bento-box box-large content-box reveal">
+            <div class="section-badge">Why Young Explorers</div>
+            <h2 class="box-title">More than just a<br>madrasah class.</h2>
+            <p class="box-text">
+              We want children to experience the mosque as a place of warmth and belonging.
+              Young Explorers offers a <strong>calm, structured environment</strong> with clear routines and supportive
+              relationships, helping children feel safe, motivated, and proud of their progress.
+            </p>
+            <p class="box-text">
+              This is purposeful enrichment, designed around how children learn best — supporting emotional regulation,
+              focus, and readiness to learn.
+            </p>
+          </div>
+
+          <!-- Stat/Feature Box -->
+          <div class="bento-box box-tall dark-glass reveal reveal-delay-2">
+            <div class="stat-number">3hrs</div>
+            <div class="stat-label">Weekly Session</div>
+            <div class="separator-line"></div>
+            <p class="stat-desc">
+              Every Saturday<br>
+              10:00 AM – 1:00 PM
+            </p>
+          </div>
+
+          <!-- Emotional Wellbeing Box -->
+          <div class="bento-box box-wide image-box-1 reveal reveal-delay-3">
+            <div class="overlay-content">
+              <h3>Emotional Wellbeing</h3>
+              <p>Supportive environment for confidence & character.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section-padding overflow-hidden">
+      <div class="container">
+        <div class="text-center mb-large reveal">
+          <h2 class="section-title">Parents Love Us</h2>
+          <p class="section-subtitle">Real feedback from our community.</p>
+        </div>
+
+        <div class="testimonials-wrapper reveal reveal-delay-1">
+          <!-- Scroll Container -->
+          <div class="testimonials-scroll">
+
+            <!-- Card 1 -->
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--gold-primary)" opacity="0.3">
+                  <path
+                    d="M14.017 21L14.017 18C14.017 16.896 14.321 15.293 14.922 13.191C15.522 11.089 16.486 9.4 17.813 8.125L16.208 5.861C14.048 7.962 12.332 10.518 11.06 13.528L11.06 21L14.017 21ZM5.016 21L5.016 18C5.016 16.896 5.32 15.293 5.922 13.191C6.522 11.089 7.486 9.4 8.812 8.125L7.208 5.861C5.048 7.962 3.332 10.518 2.06 13.528L2.06 21L5.016 21Z" />
+                </svg>
+              </div>
+              <p class="t-text">"My son looks forward to Saturday all week. The balance of learning and sport is perfect
+                for him."</p>
+              <div class="t-author">
+                <strong>Amir Khan</strong>
+                <span>Father of 7-year-old</span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--gold-primary)" opacity="0.3">
+                  <path
+                    d="M14.017 21L14.017 18C14.017 16.896 14.321 15.293 14.922 13.191C15.522 11.089 16.486 9.4 17.813 8.125L16.208 5.861C14.048 7.962 12.332 10.518 11.06 13.528L11.06 21L14.017 21ZM5.016 21L5.016 18C5.016 16.896 5.32 15.293 5.922 13.191C6.522 11.089 7.486 9.4 8.812 8.125L7.208 5.861C5.048 7.962 3.332 10.518 2.06 13.528L2.06 21L5.016 21Z" />
+                </svg>
+              </div>
+              <p class="t-text">"The structured environment has really helped with his focus. He comes home happy and
+                proud."</p>
+              <div class="t-author">
+                <strong>Sara Ahmed</strong>
+                <span>Mother of 10-year-old</span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--gold-primary)" opacity="0.3">
+                  <path
+                    d="M14.017 21L14.017 18C14.017 16.896 14.321 15.293 14.922 13.191C15.522 11.089 16.486 9.4 17.813 8.125L16.208 5.861C14.048 7.962 12.332 10.518 11.06 13.528L11.06 21L14.017 21ZM5.016 21L5.016 18C5.016 16.896 5.32 15.293 5.922 13.191C6.522 11.089 7.486 9.4 8.812 8.125L7.208 5.861C5.048 7.962 3.332 10.518 2.06 13.528L2.06 21L5.016 21Z" />
+                </svg>
+              </div>
+              <p class="t-text">"It's not just a class, it's a community. The teachers truly care about character
+                development."</p>
+              <div class="t-author">
+                <strong>Yusuf Ali</strong>
+                <span>Father of 6-year-old</span>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--gold-primary)" opacity="0.3">
+                  <path
+                    d="M14.017 21L14.017 18C14.017 16.896 14.321 15.293 14.922 13.191C15.522 11.089 16.486 9.4 17.813 8.125L16.208 5.861C14.048 7.962 12.332 10.518 11.06 13.528L11.06 21L14.017 21ZM5.016 21L5.016 18C5.016 16.896 5.32 15.293 5.922 13.191C6.522 11.089 7.486 9.4 8.812 8.125L7.208 5.861C5.048 7.962 3.332 10.518 2.06 13.528L2.06 21L5.016 21Z" />
+                </svg>
+              </div>
+              <p class="t-text">"Finally a programme that understands boys need to move to learn! Brilliant concept."
+              </p>
+              <div class="t-author">
+                <strong>Fatima K.</strong>
+                <span>Mother of 8-year-old</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DETAILED FEATURES ========== -->
+    <section id="features" class="section-padding bg-darker">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <h2 class="section-title">A Balanced Curriculum</h2>
+          <p class="section-subtitle">Structured routines for the whole child.</p>
+        </div>
+
+        <div class="features-grid">
+
+          <!-- Islamic Studies -->
+          <div class="feature-panel reveal">
+            <div class="panel-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <h3>Islamic Learning</h3>
+            <p class="panel-lead">Safar Academy & Journey to Jannah</p>
+            <p>Structured, age-appropriate curriculum with textbooks and workbooks. Reinforced by digital interactive
+              learning using videos and quizzes.</p>
+            <ul class="feature-list">
+              <li>Textbooks sized for ages 5–7 & 8–11</li>
+              <li>Interactive screen learning</li>
+              <li>Home subscription available</li>
+            </ul>
+          </div>
+
+          <!-- Creative -->
+          <div class="feature-panel reveal reveal-delay-1">
+            <div class="panel-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+            </div>
+            <h3>Creative Activity</h3>
+            <p class="panel-lead">Cognitive Play & Arts</p>
+            <p>Children take part in arts, crafts, colouring, and design tasks. Board games encourage teamwork and
+              problem-solving skills.</p>
+            <ul class="feature-list">
+              <li>Themed arts & crafts</li>
+              <li>Problem-solving games</li>
+              <li>Fresh fruit & water provided</li>
+            </ul>
+          </div>
+
+          <!-- Sport -->
+          <div class="feature-panel reveal reveal-delay-2">
+            <div class="panel-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="5" r="1"></circle>
+                <path d="M9 20l3-6 3 6"></path>
+                <path d="M6 16l6-10 6 10"></path>
+                <path d="M12 10l-4-4"></path>
+                <path d="M12 10l4-4"></path>
+              </svg>
+            </div>
+            <h3>Coordinated Sport</h3>
+            <p class="panel-lead">Table Tennis & Movement</p>
+            <p>Fast-paced, skill-based activities like table tennis support attention, executive functioning, and
+              emotional regulation.</p>
+            <ul class="feature-list">
+              <li>Child-friendly & full-size tables</li>
+              <li>Outdoor relay races & football</li>
+              <li>Focus on self-control, not just winning</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SCHEDULE & LEADERSHIP ========== -->
+    <section id="schedule" class="section-padding">
+      <div class="container layout-split">
+
+        <!-- Leadership Card -->
+        <div class="leadership-card reveal">
+          <div class="leadership-badge">Programme Lead</div>
+          <h3>Led by Medical Experts</h3>
+          <p>
+            Young Explorers is led by a medical doctor with a special interest in child development and positive
+            behavioural support.
+          </p>
+          <p>
+            This ensures high standards of care, structure, and consistency — aligning with Scotland's emphasis on
+            holistic child development.
+          </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-wrapper reveal reveal-delay-1">
+          <h3 class="timeline-heading">Session Format</h3>
+
+          <div class="timeline-simple">
+            <div class="t-item">
+              <span class="t-time">10:00</span>
+              <span class="t-label">Arrival & Settling</span>
+            </div>
+            <div class="t-item">
+              <span class="t-time">10:15</span>
+              <span class="t-label">Rotations: Learn · Play · Move</span>
+            </div>
+            <div class="t-item highlight-item">
+              <span class="t-time">12:30</span>
+              <span class="t-label">Adhan & Dhuhr Prayer</span>
+            </div>
+            <div class="t-item">
+              <span class="t-time">13:00</span>
+              <span class="t-label">Collection</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== REGISTRATION ========== -->
+    <section id="register" class="section-padding register-zone">
+      <div class="container container-narrow">
+        <div class="register-card glass-panel reveal">
+          <div class="card-border-glow"></div>
+
+          <div class="text-center mb-large">
+            <h2 class="section-title">Join Young Explorers</h2>
+            <p class="section-subtitle">Spaces are limited. Register your interest today.</p>
+          </div>
+
+          <form id="registerForm" class="modern-form">
+            <div class="form-grid">
+              <div class="input-group">
+                <label>Parent Name</label>
+                <input type="text" name="parentName" required placeholder="Full name">
+              </div>
+              <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" name="parentEmail" required placeholder="hello@example.com">
+              </div>
+              <div class="input-group">
+                <label>Phone Number</label>
+                <input type="tel" name="parentPhone" required placeholder="07...">
+              </div>
+              <div class="input-group">
+                <label>Child's Name</label>
+                <input type="text" name="childName" required placeholder="Child's name">
+              </div>
+              <div class="input-group">
+                <label>Child's Age</label>
+                <input type="number" id="childAge" name="childAge" min="5" max="11" required placeholder="Age (5-11)">
+              </div>
+              <div class="input-group">
+                <label>Age Group</label>
+                <select id="ageGroup" name="ageGroup" required>
+                  <option value="" disabled selected>Select Group</option>
+                  <option value="5-7">5 – 7 Years</option>
+                  <option value="8-11">8 – 11 Years</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-group full-width">
+              <label>Medical / Additional Info</label>
+              <textarea name="additionalInfo" rows="3" placeholder="Any allergies or requirements?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-block btn-lg">Submit Registration</button>
+            <p class="form-disclaimer">We will contact you to confirm your child's place.</p>
+          </form>
+
+          <div id="formSuccess" class="success-message hidden">
+            <div class="success-icon">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" style="color: var(--gold-primary);">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3>Registration Sent</h3>
+            <p>We've received your details and will be in touch soon.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <span class="f-logo">
+              <!-- Mosque Icon -->
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L4 12h16L12 2z"></path>
+                <rect x="4" y="12" width="16" height="10"></rect>
+                <path d="M12 12v10"></path>
+              </svg>
+            </span>
+            <span class="f-name">Zia-ul-Quran</span>
+          </div>
+          <div class="footer-contact">
+            <p>info@ziaulquran.org</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Young Explorers Programme.</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
