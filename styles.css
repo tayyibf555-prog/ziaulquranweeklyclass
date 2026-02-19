@@ -1013,6 +1013,21 @@ img {
 }
 
 @media (max-width: 768px) {
+
+  /* Layout & Spacing */
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .hero-container {
+    gap: 40px;
+  }
+
+  /* Header */
   .desktop-nav {
     display: none;
   }
@@ -1021,29 +1036,75 @@ img {
     display: flex;
   }
 
+  /* Hero Typography & Actions */
   .hero-title {
     font-size: 2.5rem;
+    line-height: 1.1;
   }
 
+  .hero-lead {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .btn {
+    width: 100%;
+    /* Full width buttons on mobile */
+  }
+
+  /* Hero Grid */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    /* removed constraint to let it fill container */
+    margin-top: 40px;
+  }
+
+  /* Bento Box Updates */
+  .bento-box {
+    padding: 24px;
+  }
+
+  .box-title {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+  }
+
+  /* Forms */
   .form-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .register-card {
     padding: 32px 20px;
   }
 
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    padding: 12px;
+  }
+
+  /* Footer */
   .footer-top {
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
     text-align: center;
   }
 
-  .hero-grid {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    /* Constrain width on mobile */
-    margin: 40px auto 0;
+  /* Feature Panels */
+  .feature-panel {
+    padding: 24px;
   }
 }
 
