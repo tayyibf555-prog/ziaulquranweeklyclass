@@ -1070,11 +1070,26 @@ img {
     display: none;
   }
 
+  .site-header {
+    padding: 12px 0;
+    /* Reduced padding */
+  }
+
+  .brand-logo {
+    height: 50px;
+    /* Smaller logo */
+  }
+
   .mobile-menu-toggle {
     display: flex;
   }
 
   /* Hero Typography & Actions */
+  .hero-section {
+    padding-top: 120px;
+    /* Ensure content clears the header */
+  }
+
   .hero-title {
     font-size: 2.5rem;
     line-height: 1.1;
